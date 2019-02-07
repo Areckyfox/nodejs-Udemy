@@ -40,9 +40,9 @@ const requestHandler = (req, res) => {
       const parseBody = Buffer.concat(body).toString();
       const user = parseBody.split("=")[1];
       console.log(user);
-        res.statusCode = 302;
-        res.setHeader('Location', '/');
-        return res.end();
+      res.statusCode = 302;
+      res.setHeader('Location', '/');
+      return res.end();
     });
   }
 };
