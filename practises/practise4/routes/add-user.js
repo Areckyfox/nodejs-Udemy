@@ -16,7 +16,7 @@ router.post('/add', (req, res, next)=>{
     users.push(req.body.user);
     console.log(users);
     
-    // res.redirect('/');
+    res.redirect('/');
 });
 
 exports.routes = router;

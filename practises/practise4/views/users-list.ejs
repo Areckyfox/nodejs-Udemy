@@ -1,0 +1,14 @@
+<%- include('includes/navigation.ejs')%>
+    <main>
+        <ul>
+            <% if(users.length > 0) { %>
+                <% users.forEach(user => {%>
+                <li><%= user %></li>
+                
+            <% })%>
+            <% } else { %>
+                <h2>There are no users to display</h2>
+            <% }%>    
+        </ul>
+    </main>
+<%- include('includes/end.ejs')%>
